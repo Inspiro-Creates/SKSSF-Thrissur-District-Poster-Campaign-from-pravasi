@@ -128,7 +128,7 @@ function download() {
     .toDataURL("image/png")
     .replace("image/png", "image/octet-stream");
   download.setAttribute("href", image);
-  download.setAttribute("download", "ജൂൺ 5 പരിസ്ഥിതി ദിനം SKSSF ത്വലബ സ്റ്റേറ്റ് കമ്മിറ്റി.jpg");
+  download.setAttribute("download", "poster.jpg");
 }
 
 // download button disaplay
