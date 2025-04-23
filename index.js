@@ -105,13 +105,15 @@ function draw() {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
   ctx.font = " 28px Roboto";
-  ctx.textAlign = ;
+  ctx.textAlign = 'center' ;
   ctx.fillStyle = '#000000';
 
   // Draw slice
   ctx.drawImage(
     document.getElementById("croppedImage"),
-
+      myImage.style.position = 'absolute';
+    myImage.style.left = '271px';
+    myImage.style.top = '782px';
   );
 
   // Draw frame
