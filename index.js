@@ -187,3 +187,4 @@ $('#close').click(function () {
 $('#download').click(function () {
   location.reload();
 });
+s
