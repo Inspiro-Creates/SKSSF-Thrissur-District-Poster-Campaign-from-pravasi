@@ -122,7 +122,7 @@ function draw() {
   );
 
   // Draw frame
-  ctx.drawImage(document.getElementById("frame").value, 271, 782);
+  ctx.drawImage(document.getElementById("frame"), 0, 0);
   ctx.fillText(document.getElementById("username").value, 271, 881);
 }
 
