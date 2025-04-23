@@ -79,8 +79,8 @@ function processImage() {
     viewMode: 2,
 
     data: {
-      width: 1025,
-      height:1025,
+      width: 180,
+      height:180,
     },
     crop(event) {
       console.log(
@@ -105,20 +105,13 @@ function draw() {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
   ctx.font = " 28px Roboto";
-  ctx.textAlign = "center";
+  ctx.textAlign = ;
   ctx.fillStyle = '#000000';
 
   // Draw slice
   ctx.drawImage(
     document.getElementById("croppedImage"),
-    196,
-    367,
-    719,
-    529
-    // 900,
-    // 0,
-    // 1500,
-    // 1500
+
   );
 
   // Draw frame
