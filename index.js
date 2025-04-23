@@ -57,7 +57,7 @@ function processImage() {
     // maxContainerWidth   : 200,
     // maxCanvasWidth      : 200,
     // maxCanvasHeight     : 200,
-    aspectRatio:  260/260,  
+    aspectRatio:  180/180,  
     autoCropArea: 1,
     background: true,
     movable: false,
@@ -122,8 +122,8 @@ function draw() {
   );
 
   // Draw frame
-  ctx.drawImage(document.getElementById("frame"), 0, 0);
-  ctx.fillText(document.getElementById("username").value, 650, 900);
+  ctx.drawImage(document.getElementById("frame").value, 271, 782);
+  ctx.fillText(document.getElementById("username").value, 271, 881);
 }
 
 // downlad function
