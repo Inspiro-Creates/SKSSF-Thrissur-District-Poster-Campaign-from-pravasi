@@ -57,7 +57,7 @@ function processImage() {
     // maxContainerWidth   : 200,
     // maxCanvasWidth      : 200,
     // maxCanvasHeight     : 200,
-    aspectRatio:  180/180,  
+    aspectRatio:  260/260,  
     autoCropArea: 1,
     background: true,
     movable: false,
@@ -135,7 +135,7 @@ function download() {
     .toDataURL("image/png")
     .replace("image/png", "image/octet-stream");
   download.setAttribute("href", image);
-  download.setAttribute("download", "Poster.jpg");
+  download.setAttribute("download", "ജൂൺ 5 പരിസ്ഥിതി ദിനം SKSSF ത്വലബ സ്റ്റേറ്റ് കമ്മിറ്റി.jpg");
 }
 
 // download button disaplay
