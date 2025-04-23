@@ -123,7 +123,7 @@ function draw() {
 
   // Draw frame
   ctx.drawImage(document.getElementById("frame"), 0, 0);
-  ctx.fillText(document.getElementById("username").value, 271, 881);
+  ctx.fillText(document.getElementById("username").value, 650, 900);
 }
 
 // downlad function
