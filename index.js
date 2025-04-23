@@ -79,8 +79,8 @@ function processImage() {
     viewMode: 2,
 
     data: {
-      width: 180,
-      height:180,
+      width: 1025,
+      height:1025,
     },
     crop(event) {
       console.log(
@@ -105,15 +105,20 @@ function draw() {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
   ctx.font = " 28px Roboto";
-  ctx.textAlign = 'center' ;
+  ctx.textAlign = "center";
   ctx.fillStyle = '#000000';
 
   // Draw slice
   ctx.drawImage(
     document.getElementById("croppedImage"),
-      myImage.style.position = 'absolute';
-    myImage.style.left = '271px';
-    myImage.style.top = '782px';
+    196,
+    367,
+    719,
+    529
+    // 900,
+    // 0,
+    // 1500,
+    // 1500
   );
 
   // Draw frame
@@ -130,7 +135,7 @@ function download() {
     .toDataURL("image/png")
     .replace("image/png", "image/octet-stream");
   download.setAttribute("href", image);
-  download.setAttribute("download", "poster.jpg");
+  download.setAttribute("download", "Poster.jpg");
 }
 
 // download button disaplay
