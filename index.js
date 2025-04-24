@@ -113,8 +113,8 @@ function draw() {
     document.getElementById("croppedImage"),
     141,
     652,
-    260,
-    260
+    0,
+    0
     // 0,
     // 0,
     // 0,
