@@ -1,230 +1,208 @@
-body {
-  font-family: "Roboto", sans-serif;
-  font-family: 'Manjari', sans-serif;
-  /* background-color: #f8fafb;  */
-  background: linear-gradient(-45deg, #f457ac, #ff0089);
-}
-.btn-hover.color-2 {
-  background-image: linear-gradient(to right, #ff0089, #f457ac);
-  box-shadow: 0 4px 15px 0 #ff0089;
-}
+<!doctype html>
+<html lang="en">
 
+<head>
 
-p {
-  color: #b3b3b3;
-  font-weight: 300; }
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Roboto", sans-serif; }
+  <title>Poster Campaign by Inspiro Creates</title>
 
-a {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease; }
-  a:hover {
-    text-decoration: none !important; }
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-.content {
-  padding: 8rem 0; }
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
 
-h2 {
-  font-size: 20px; }
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-.form-block {
-  background: #fff;
-  padding: 60px;
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1); }
-  @media (max-width: 991.98px) {
-    .form-block {
-      padding: 30px; } }
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
 
-@media (max-width: 991.98px) {
-  .content .bg {
-    height: 500px; } }
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.6/cropper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.6/cropper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.6/cropper.min.css" />
 
-.content .contents, .content .bg {
-  width: 50%; }
-  @media (max-width: 1199.98px) {
-    .content .contents, .content .bg {
-      width: 100%; } }
-  .content .contents .form-group, .content .bg .form-group {
-    position: relative; }
-    .content .contents .form-group label, .content .bg .form-group label {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      -webkit-transition: .3s all ease;
-      -o-transition: .3s all ease;
-      transition: .3s all ease; }
-    .content .contents .form-group input, .content .bg .form-group input {
-      background: transparent;
-      border-bottom: 1px solid #ccc; }
-    .content .contents .form-group.first, .content .bg .form-group.first {
-      border-top-left-radius: 7px;
-      border-top-right-radius: 7px; }
-    .content .contents .form-group.last, .content .bg .form-group.last {
-      border-bottom-left-radius: 7px;
-      border-bottom-right-radius: 7px; }
-    .content .contents .form-group label, .content .bg .form-group label {
-      font-size: 12px;
-      display: block;
-      margin-bottom: 0;
-      color: #000000; }
-    .content .contents .form-group.focus, .content .bg .form-group.focus {
-      background: #fff; }
-    .content .contents .form-group.field--not-empty label, .content .bg .form-group.field--not-empty label {
-      margin-top: -25px; }
-  .content .contents .form-control, .content .bg .form-control {
-    border: none;
-    padding: 0;
-    font-size: 20px;
-    border-radius: 0; }
-    .content .contents .form-control:active, .content .contents .form-control:focus, .content .bg .form-control:active, .content .bg .form-control:focus {
-      outline: none;
-      -webkit-box-shadow: none;
-      box-shadow: none; }
+  <script src="./index.js" defer></script>
+</head>
 
-.content .bg {
-  background-size: cover;
-  background-position: center; }
-
-.content a {
-  color: #888;
-  text-decoration: underline; }
-
-.content .btn {
-  height: 54px;
-  padding-left: 30px;
-  padding-right: 30px; }
-
-.content .forgot-pass {
-  position: relative;
-  top: 2px;
-  font-size: 14px; }
-
-.content .btn-pill {
-  border-radius: 30px; }
-
-.social-login a {
-  text-decoration: none;
-  position: relative;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 10px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: inline-block; }
-  .social-login a span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-  .social-login a:hover {
-    color: #fff; }
-  .social-login a.facebook {
-    background-image: linear-gradient(to right, #ff0089, #f457ac); }
-    .social-login a.facebook:hover {
-      background: #979797; }
-  .social-login a.twitter {
-    background-image: linear-gradient(to right, #ff0089, #f457ac);}
-    .social-login a.twitter:hover {
-      background:#979797 }
-  .social-login a.google {
-    background-image: linear-gradient(to right, #ff0089, #f457ac); }
-    .social-login a.google:hover {
-      background:#979797;}
-
-.control {
-  display: block;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
-  cursor: pointer;
-  font-size: 14px; }
-  .control .caption {
-    position: relative;
-    top: .2rem;
-    color: #888; }
-
-.control input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0; }
-
-.control__indicator {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background: #e6e6e6;
-  border-radius: 4px; }
-
-.control--radio .control__indicator {
-  border-radius: 50%; }
-
-.control:hover input ~ .control__indicator,
-.control input:focus ~ .control__indicator {
-  background: #ccc; }
-
-.control input:checked ~ .control__indicator {
-  background: #38d39f; }
-
-.control:hover input:not([disabled]):checked ~ .control__indicator,
-.control input:checked:focus ~ .control__indicator {
-  background: #4dd8a9; }
-
-.control input:disabled ~ .control__indicator {
-  background: #e6e6e6;
-  opacity: 0.9;
-  pointer-events: none; }
-
-.control__indicator:after {
-  font-family: 'icomoon';
-  content: '\e5ca';
-  position: absolute;
-  display: none;
-  font-size: 16px;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease; }
-
-.control input:checked ~ .control__indicator:after {
-  display: block;
-  color: #fff; }
-
-.control--checkbox .control__indicator:after {
-  top: 50%;
-  left: 50%;
-  margin-top: -1px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.control--checkbox input:disabled ~ .control__indicator:after {
-  border-color: #7b7b7b; }
-
-.control--checkbox input:disabled:checked ~ .control__indicator {
-  background-color: #7e0cf5;
-  opacity: .2; }
+<body>
 
 
 
-  /* Ensure the size of the image fit the container perfectly */
-#uploadedImage {
-  display: block;
+  <div class="content">
+    <div class="container ">
+      <div class="row justify-content-center">
+        <!-- <div class="col-md-6 order-md-2">
+          <img src="images/undraw_file_sync_ot38.svg" alt="Image" class="img-fluid">
+        </div> -->
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center ">
+            <div class="col-md-12 ">
+              <div class="form-block btn-pill">
+                
+                <div class="mb-4" style="width: 100%;">
+                 <img src="images/tittle-image.jpg" alt="" style="width: 100%;  height: 200px; object-fit: cover;  ">
+                </div>
+                
+                
+                <div class="mb-4">
+                  <h2 class="text-center"><strong>സമസ്‌ത ഭരണഘടനാ സംരക്ഷണ ബഹുജന റാലി </strong></h2>
+                  <p class="mb-6 text-center">SKSSF തൃശൂർ ജില്ലാ കമ്മിറ്റി</p>
+                </div>
+                <form action="#" method="post">
+                  <div id="poster1" class="form-group first">
+                      <label for="username">Name (പേര്)</label>
+                    <input type="text" class="form-control" id="username">
 
-  /* This rule is very important, please don't ignore this */
-  max-width: 100%;
-}
+                  </div>
+                  <!-- <div class="form-group last mb-4">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password">
+                    
+                  </div> -->
 
-#cropButton {
-  display: none;
-}
+
+                  <!-- Small modal -->
+
+
+
+                  <!-- Small modal -->
+                  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+                    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+
+                          <!-- Small modal -->
+
+                          <h5 class="modal-title" id="modalLabel">Select and Crop the image</h5>
+                          <button id="x" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+
+
+                        <!-- Small modal -->
+
+
+                        <div class="modal-body">
+
+
+                          <!-- input area -->
+
+
+
+                          <div class="custom-file" lang="es">
+                            <input type="file" name="fileUpload" id="fileUpload" class="custom-file-input"
+                              accept="image/x-png,image/gif,image/jpeg">
+                            <label class="custom-file-label">Select file...</label>
+                          </div>
+
+
+                          <!-- crop area -->
+
+                          <div class="row">
+                            <div class="col-md-1">
+                              <center>
+                                <!-- <button type="button" id="cropButton" class="btn btn-primary mt-2 crop-button"
+                                  style="display:none">Crop</button> -->
+                                <!-- <div  id="uploadedImage" ></div> -->
+                                <center>
+
+
+                                  <div style="margin-top: 20px;" id="uploadedImage"></div>
+
+                                </center>
+                              </center>
+                              <div style="display: none;" id="cropResult"></div>
+                            </div>
+                          </div>
+                          <!-- <div class="img-container mt-3" style="display: none;"> -->
+                          <!-- <img id="uploadedImage" id="image" width="100%"> -->
+                          <!-- <div id="uploadedImage"></div> -->
+                          <!-- </div> -->
+                        </div>
+
+                        <!-- button -->
+
+                        <div class="modal-footer">
+                          <button id="close" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                          <button type="button" value="Button" id="cropButton" data-dismiss="modal"
+                            class="btn btn-hover color-2 crop-button">Crop</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <img id="croppedImage" /><br /> -->
+                  <!-- <button id="cropButton">crop</button> -->
+                  <!-- Large modal -->
+
+                  <input id="poster" type="button" data-toggle="modal" data-target=".bd-example-modal-sm" value="CREATE POSTER"
+                    class="btn btn-pill text-white btn-block  btn-hover color-2">
+
+
+
+                  <!-- downlad button -->
+
+                  <a id="download" value="New Tab" style="display: none;" download="triangle.png">
+                    <button type="button" class="btn btn-pill text-white btn-block btn-hover color-2"
+                      onClick="download()">Download Poster by Inspiro Creates</button>
+                  </a>
+
+
+               
+                 <span class="d-block text-center my-4 text-muted">For New Campaigns <a
+                        href="https://wa.me/918891438475">click here</a></span>
+
+                 <div class="social-login text-center">
+                     <a href="https://www.instagram.com/rinzan_46/" class="twitter">
+                         <span class="icon-instagram mr-3"></span>
+                     </a>
+                     <a href="https://wa.me/918590977803" class="google">
+                         <span class="icon-whatsapp mr-3"></span>
+                     </a>
+                     <a href="https://www.facebook.com/muhammed.rinzan.3a" class="facebook">
+                         <span class="icon-facebook mr-3"></span>
+                     </a>
+
+                 </div>
+                  <span class="d-block text-center my-4 text-muted">© 2025 | Design by <a
+                      href="https://wa.me/918891438475">Rinzan Guruvayur</a></span>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- canvas hide area-->
+
+  <div style="display: none;">
+    <canvas id="canvas" width="1080" height="1080"></canvas>
+  </div>
+  <div style="display:none;">
+    <img id="croppedImage" src="">
+    <img id="frame" src="images/frame.png">
+  </div>
+
+
+
+  <!-- close -->
+
+  <script src="script.js"></script>
+  <script src="index.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
