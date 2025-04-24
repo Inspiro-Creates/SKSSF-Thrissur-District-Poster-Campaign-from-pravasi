@@ -22,8 +22,8 @@ function getImage() {
   newImg.id = "myGreatImage";
   // uploadedImageDiv.style.border = "4px solid #FCB514";
   // uploadedImageDiv.innerHTML
-  uploadedImageDiv.style.width = "300px";
-  uploadedImageDiv.style.height = "350px";
+  uploadedImageDiv.style.width = "260px";
+  uploadedImageDiv.style.height = "260px";
   uploadedImageDiv.appendChild(newImg);
   myGreatImage = document.getElementById("myGreatImage");
 
@@ -111,18 +111,18 @@ function draw() {
   // Draw slice
   ctx.drawImage(
     document.getElementById("croppedImage"),
-    196,
-    367,
-    719,
-    529
-    // 900,
+    141,
+    652,
+    260,
+    260
     // 0,
-    // 1500,
-    // 1500
+    // 0,
+    // 0,
+    // 0
   );
 
   // Draw frame
-  ctx.drawImage(document.getElementById("frame"), 0, 0);
+  ctx.drawImage(document.getElementById("frame"), 141, 652);
   ctx.fillText(document.getElementById("username").value, 650, 900);
 }
 
@@ -135,7 +135,7 @@ function download() {
     .toDataURL("image/png")
     .replace("image/png", "image/octet-stream");
   download.setAttribute("href", image);
-  download.setAttribute("download", "ജൂൺ 5 പരിസ്ഥിതി ദിനം SKSSF ത്വലബ സ്റ്റേറ്റ് കമ്മിറ്റി.jpg");
+  download.setAttribute("download", "Poster by Inspiro Creates.jpg");
 }
 
 // download button disaplay
@@ -187,4 +187,3 @@ $('#close').click(function () {
 $('#download').click(function () {
   location.reload();
 });
-s
