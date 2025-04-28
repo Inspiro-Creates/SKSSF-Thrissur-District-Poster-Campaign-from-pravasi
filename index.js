@@ -23,7 +23,7 @@ function getImage() {
   // uploadedImageDiv.style.border = "4px solid #FCB514";
   // uploadedImageDiv.innerHTML
   uploadedImageDiv.style.width = "250px";
-  uploadedImageDiv.style.height = "320px";
+  uploadedImageDiv.style.height = "300px";
   uploadedImageDiv.appendChild(newImg);
   myGreatImage = document.getElementById("myGreatImage");
 
@@ -57,7 +57,7 @@ function processImage() {
     // maxContainerWidth   : 200,
     // maxCanvasWidth      : 200,
     // maxCanvasHeight     : 200,
-    aspectRatio:  250/320,  
+    aspectRatio:  250/300,  
     autoCropArea: 1,
     background: true,
     movable: false,
@@ -102,19 +102,19 @@ function cropImage() {
 }
 
 function draw() {
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  ctx.font = " 28px Roboto";
-  ctx.textAlign = "center";
-    ctx.fillStyle = '#ffffff';
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.font = " 28px Roboto";
+    ctx.textAlign = "center";
+    ctx.fill - style = "#ffffff , white";
 
   // Draw slice
   ctx.drawImage(
     document.getElementById("croppedImage"),
-    670,
-    264,
+    661.63,
+    307.38,
     250,
-    320
+    300
     // 0,
     // 0,
     // 0,
@@ -123,7 +123,7 @@ function draw() {
 
   // Draw frame
   ctx.drawImage(document.getElementById("frame"), 0, 0);
-  ctx.fillText(document.getElementById("username").value, 795, 635);
+  ctx.fillText(document.getElementById("username").value, 829, 703);
 }
 
 // downlad function
